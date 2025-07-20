@@ -26,7 +26,8 @@ nav li {
     list-style: none;
     margin-left: 34px;
 }
-nav ul{
+
+nav ul {
     font-size: 1rem;
     font-weight: 600;
 }
@@ -41,27 +42,30 @@ nav a {
     justify-content: space-between;
     margin-bottom: 50px;
 }
-.logo{
+
+.logo {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 /* header-section */
-.header{
+.header {
     align-items: center;
 }
-.header-title{
+
+.header-title {
     font-size: 3.25rem;
     font-weight: 700;
     color: rgb(58, 58, 58);
 }
-.header-description{
+
+.header-description {
     font-size: 1rem;
     font-weight: 700;
     max-width: 505px;
 }
 
-.btg-primary{
+.btg-primary {
     font-size: 1rem;
     font-weight: 700;
     padding: 10px 24px;
@@ -72,15 +76,75 @@ nav a {
     border-radius: 41px;
     border: none;
 }
-.header-img{
+
+.header-img {
     background-image: url('../images/Circle\ design.svg');
 }
 
 /* company-img(banner) */
-.company-img{
+.company-img {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     margin-top: 100px;
     margin-bottom: 100px;
     justify-items: center;
+}
+
+/* responsive for mobile device */
+@media screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .header-title {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .company-img {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .header-description {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 15px 20px 20px 20px;
+    }
+
+    #home {
+        margin-left: 0px;
+    }
+
+    nav ul li {
+        flex-direction: row;
+        margin-left: 12px;
+        align-items: center;
+    }
+
+}
+
+/* responsive for tab device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
 }
