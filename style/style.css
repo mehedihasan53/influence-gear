@@ -11,6 +11,8 @@
 .main {
   max-width: 1140px;
   margin: 20px auto;
+}
+.padding {
   padding: 0px 20px;
 }
 
@@ -164,9 +166,10 @@ nav a {
 }
 .Featured-img {
   margin-right: 98px;
+  width: 100%;
 }
 .featured-title {
-  font-size: 38px;
+  font-size: 2.3rem;
   font-weight: 700;
   color: rgb(10, 8, 38);
 }
@@ -214,7 +217,6 @@ footer li a {
 footer ul {
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
   padding-bottom: 50px;
 }
 
@@ -229,7 +231,8 @@ footer ul {
     align-items: center;
   }
 
-  .header {
+  .header,
+  .featured-products {
     flex-direction: column-reverse;
   }
 
@@ -264,6 +267,24 @@ footer ul {
     grid-template-columns: 1fr;
     margin: 20px auto;
   }
+  .featured-products {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  #btg {
+    margin-bottom: 30px;
+  }
+  .Featured-img img {
+    width: 100%;
+    margin: 20px;
+    padding-left: 30px;
+  }
+  .footer-title {
+    margin-top: 30px;
+  }
+  .popular-collection {
+    padding: 30px;
+  }
 }
 
 /* responsive for tab device */
@@ -274,5 +295,9 @@ footer ul {
 
   .header {
     flex-direction: column-reverse;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5px auto;
   }
 }
